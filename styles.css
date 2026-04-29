@@ -1,0 +1,221 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  background-image: url("godfield.png");
+  background-repeat: repeat;
+  background-position: top left;
+  color: #f2f0dd;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+a {
+  color: #66aaff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #9c8fe8;
+}
+
+a:hover {
+  color: #ffffff;
+  background: #660000;
+}
+
+.site-shell {
+  width: 900px;
+  max-width: calc(100% - 24px);
+  margin: 18px auto 32px;
+  text-align: center;
+}
+
+.site-header {
+  margin-bottom: 10px;
+}
+
+.site-header img {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #ffefc2;
+  text-transform: none;
+}
+
+.site-subtitle {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #ffcf9f;
+}
+
+.content-frame {
+  background: #1a0000;
+  border: 3px ridge #9b7b52;
+  padding: 18px 24px 20px;
+  text-align: left;
+  box-shadow: 0 0 0 1px #300000;
+}
+
+.intro-copy p,
+.correspondence p,
+.side-note p {
+  margin: 0 0 16px;
+}
+
+.intro-copy {
+  color: #f5edd8;
+  font-size: 19px;
+}
+
+.oracle-rule {
+  border: 0;
+  border-top: 1px solid #b89562;
+  margin: 22px 0 18px;
+}
+
+.bookmark-title,
+.archive-section h3 {
+  margin: 0;
+  text-align: center;
+  color: #ffe8b0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bookmark-subtitle {
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: #f0c987;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.bookmark-list {
+  display: block;
+}
+
+.bookmark-item {
+  display: table;
+  width: 100%;
+  margin: 0 0 14px;
+  border-collapse: collapse;
+}
+
+.bookmark-badge {
+  display: table-cell;
+  width: 52px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 26px;
+  color: #ffcc66;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.bookmark-item > div:last-child {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.bookmark-item h3 {
+  margin: 0 0 3px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bookmark-item p {
+  margin: 0;
+  color: #eadfbd;
+  font-size: 17px;
+}
+
+.archive-section {
+  margin-top: 8px;
+}
+
+.archive-list {
+  margin: 18px 0 0 20px;
+  padding: 0;
+}
+
+.archive-list li {
+  margin-bottom: 12px;
+  color: #f2e6c7;
+}
+
+.archive-list .meta {
+  display: block;
+  margin-top: 3px;
+  color: #d7c6a0;
+  font-size: 16px;
+}
+
+.correspondence,
+.side-note {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border: 1px solid #8d6e49;
+  background: rgba(255, 240, 200, 0.04);
+  color: #f1e4c1;
+}
+
+.footer-navbox {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid #b89562;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #e9d5a6;
+}
+
+.site-footer {
+  height: 20px;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 17px;
+  }
+
+  .site-title {
+    font-size: 34px;
+  }
+
+  .site-subtitle {
+    font-size: 18px;
+  }
+
+  .content-frame {
+    padding: 14px 14px 18px;
+  }
+
+  .bookmark-item,
+  .bookmark-badge,
+  .bookmark-item > div:last-child {
+    display: block;
+    width: auto;
+  }
+
+  .bookmark-badge {
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 22px;
+  }
+
+  .bookmark-item h3 {
+    font-size: 22px;
+  }
+}

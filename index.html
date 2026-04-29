@@ -1,10 +1,420 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Heavens New Gate</title>
-  </head>
-  <body>
-    <h1>Heavens New Gate</h1>
-    <p>Site coming soon.</p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heaven's New Gate | Return to Earth</title>
+  <meta name="description" content="A field guide for leaving the Simulation Plane and returning to embodied life, grounded attention, and the Garden.">
+  <meta name="keywords" content="Simulation Plane, Garden, Grounded Ones, return to Earth, embodied life, attention, re-landing, pastoral, mystical, anti-alienation">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d0f0c;
+      background-image: url('godfield.png');
+      background-repeat: repeat;
+      background-position: top left;
+      color: #f2eddc;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    a {
+      color: #66aaff;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #b08cff;
+    }
+
+    a:hover {
+      color: #ffffff;
+      background-color: #5a0000;
+    }
+
+    .page {
+      width: 900px;
+      max-width: calc(100% - 20px);
+      margin: 14px auto 30px auto;
+      text-align: center;
+    }
+
+    .top-banner {
+      margin-bottom: 10px;
+    }
+
+    .top-banner img {
+      display: block;
+      margin: 0 auto 8px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 46px;
+      font-weight: bold;
+      color: #ffe8ab;
+      letter-spacing: 0.5px;
+    }
+
+    .site-subtitle {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      font-size: 21px;
+      color: #ffcf8a;
+    }
+
+    .update-line {
+      font-size: 15px;
+      color: #d8c9a4;
+      margin-bottom: 12px;
+    }
+
+    .main-panel {
+      background: #1b0000;
+      border: 3px ridge #9b7b52;
+      padding: 16px 22px 20px 22px;
+      text-align: left;
+      box-shadow: 0 0 0 1px #2c0000;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .intro-copy p,
+    .correspondence p,
+    .side-note p {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .intro-copy {
+      font-size: 19px;
+      color: #f3ead0;
+    }
+
+    .star-divider {
+      text-align: center;
+      color: #f0c977;
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin: 18px 0 14px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #ffe6a8;
+      font-size: 31px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #f3c98a;
+      font-size: 17px;
+      font-style: italic;
+      margin-top: 6px;
+      margin-bottom: 18px;
+    }
+
+    .bookmark-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .bookmark-table td {
+      vertical-align: top;
+      padding: 8px 4px;
+    }
+
+    .bookmark-symbol {
+      width: 52px;
+      text-align: center;
+      color: #ffcc66;
+      font-size: 26px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .bookmark-table h3 {
+      margin: 0 0 3px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .bookmark-table p {
+      margin: 0;
+      font-size: 17px;
+      color: #eadfbd;
+    }
+
+    .archive-title {
+      text-align: center;
+      color: #ffe6a8;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0 0 14px 0;
+    }
+
+    .archive-list {
+      margin: 0 0 0 22px;
+      padding: 0;
+    }
+
+    .archive-list li {
+      margin-bottom: 12px;
+      color: #f2e6c7;
+    }
+
+    .archive-list .meta {
+      display: block;
+      margin-top: 3px;
+      color: #d9c7a0;
+      font-size: 16px;
+    }
+
+    .correspondence,
+    .side-note {
+      margin-top: 20px;
+      border: 1px solid #8d6e49;
+      padding: 12px 14px;
+      background: rgba(255, 240, 210, 0.04);
+      color: #f2e3be;
+    }
+
+    .bottom-nav {
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid #b89562;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.9;
+      color: #e7d1a5;
+    }
+
+    .bottom-note {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 14px;
+      color: #ccb98f;
+    }
+
+    .footer-space {
+      height: 20px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        font-size: 17px;
+      }
+
+      .site-title {
+        font-size: 34px;
+      }
+
+      .site-subtitle {
+        font-size: 18px;
+      }
+
+      .main-panel {
+        padding: 14px;
+      }
+
+      .bookmark-table,
+      .bookmark-table tbody,
+      .bookmark-table tr,
+      .bookmark-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .bookmark-symbol {
+        width: auto;
+        text-align: left;
+        padding-bottom: 0;
+        font-size: 22px;
+      }
+
+      .bookmark-table td {
+        padding: 4px 0;
+      }
+
+      .bookmark-table h3 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <div class="page">
+
+    <div class="top-banner">
+      <img src="truthlogo.gif" alt="Red Alert --">
+      <h1 class="site-title">Heaven's New Gate</h1>
+      <div class="site-subtitle">For those who have grown weary of life in the Simulation Plane</div>
+      <div class="update-line">Updated for those presently seeking a return to grounded life</div>
+    </div>
+
+    <div class="main-panel">
+
+      <div class="intro-copy">
+        <p>
+          For those of us who have watched the long expansion of the Simulation Plane,
+          the sign long awaited was never a comet in the heavens. It was the visible
+          thinning of attention, the drying of the Garden, and the exhaustion of the
+          Earth beneath the weight of a life increasingly lived in rendering.
+        </p>
+
+        <p>
+          The materials gathered here are offered for those who feel that wrongness already:
+          that persistent sense that visibility is not presence, that connection is not relation,
+          and that a profile cannot contain a life. They are intended to be studied slowly,
+          not consumed.
+        </p>
+
+        <p>
+          We are grateful for all who have kept some residual groundedness alive through the
+          late brightness of the Plane. May these pages serve as instruction, recognition,
+          and preparation.
+        </p>
+      </div>
+
+      <div class="star-divider">* * * * * * * * * *</div>
+
+      <h2 class="section-title">Key Materials and Vital Bookmarks</h2>
+      <div class="section-subtitle">For those investigating the possibility of return</div>
+
+      <table class="bookmark-table" aria-label="Key materials and bookmarks">
+        <tr>
+          <td class="bookmark-symbol">I</td>
+          <td>
+            <h3><a href="misc/intro.htm">What Our Purpose Is - The Simple "Bottom Line"</a></h3>
+            <p>The foundational statement regarding the Simulation Plane, the Garden, and the role of the present Representatives of the Grounded Ones.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">II</td>
+          <td>
+            <h3><a href="misc/purpose.htm">Overview of Present Mission By Indigo — a student</a></h3>
+            <p>A historical synopsis of the Plane's expansion and the lineage that recognized it before it had a name.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">III</td>
+          <td>
+            <h3><a href="misc/ovrview.htm">'25 Statement by a Native, Presently Grounded</a></h3>
+            <p>A longer doctrinal paper on navigation, seeding, return, and the closing conditions of the present threshold.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">IV</td>
+          <td>
+            <h3><a href="misc/lastchnc.htm">The Grounded Ones Offer - Last Chance to Return to Earth</a></h3>
+            <p>A severe but practical warning regarding the present hour and the damage now being done through the Plane's expansion.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">V</td>
+          <td>
+            <h3><a href="book/book.htm">The Book of the Garden's Keeping</a></h3>
+            <p>An internal reader linking the major statements, letters, and field materials currently gathered at this site.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">🤸</td>
+          <td>
+            <h3><a href="misc/letter.htm">Our Position Against Self-Erasure</a></h3>
+            <p>A clarification regarding embodiment, return, and the difference between withdrawal from the Plane and injury to the body.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">👤</td>
+          <td>
+            <h3><a href="misc/member.htm">How a Representative of the Grounded Ones May Appear</a></h3>
+            <p>Notes for those who imagine such a figure would arrive clothed in spectacle rather than ordinary presence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">🍃</td>
+          <td>
+            <h3><a href="misc/exit.htm">Exit Statements by Students of Return</a></h3>
+            <p>Three personal statements from Juniper, Sage, and Willow on why life within the Plane had become impossible.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bookmark-symbol">🌬️</td>
+          <td>
+            <h3><a href="misc/pressrel.htm">The Grounded Ones Withdraw from the Simulation Plane and Return to Earthly Life</a></h3>
+            <p>A public statement regarding withdrawal, re-landing, and the conditions still available to those who would follow.</p>
+          </td>
+        </tr>
+      </table>
+
+      <div class="star-divider">* * * * * * * * * *</div>
+
+      <h3 class="archive-title">Field Recordings, Transcripts, and Reading Materials</h3>
+
+      <ul class="archive-list">
+        <li>
+          <a href="misc/vt092996.htm">Field Transcript I: Before the Garden Dries</a>
+          <span class="meta">Transcript page and introductory note. Supplemental translation page also linked there.</span>
+        </li>
+        <li>
+          <a href="misc/vt100596.htm">Field Transcript II: On Recycling, Return, and What May Yet Be Saved</a>
+          <span class="meta">Transcript page and introductory note. Supplemental translation page also linked there.</span>
+        </li>
+        <li>
+          <a href="misc/link.htm">Connecting Links</a>
+          <span class="meta">A holding page for related materials, outward references, and future additions.</span>
+        </li>
+      </ul>
+
+      <div class="correspondence">
+        <p>
+          <strong>Field Correspondence:</strong> A mail-art and reading-circle page is being assembled.
+          Those who wish to exchange printed materials, copied warnings, or hand-addressed notes should
+          preserve this address space and return later, when the circle is ready to receive them.
+        </p>
+      </div>
+
+      <div class="side-note">
+        <p>
+          This site does not ask for a login, a profile, or an account. Read slowly. Copy what is useful.
+          Print pages if necessary. The Plane prefers that everything remain lit, live, and measurable.
+          It is not required.
+        </p>
+      </div>
+
+      <div class="bottom-nav">
+        |
+        <a href="book/book.htm">The Book of the Garden's Keeping</a> |
+        <a href="misc/intro.htm">Purpose</a> |
+        <a href="misc/purpose.htm">Mission</a> |
+        <a href="misc/ovrview.htm">Statement</a> |
+        <a href="misc/lastchnc.htm">Last Chance</a> |
+        <a href="misc/letter.htm">Self-Erasure</a> |
+        <a href="misc/member.htm">How a Representative May Appear</a> |
+        <a href="misc/link.htm">Connecting Links</a> |
+        <a href="misc/secure.htm">Privacy</a> |
+        <a href="#top">Top</a> |
+      </div>
+
+      <div class="bottom-note">
+        Heavens New Gate — study slowly, print freely, return attentively
+      </div>
+    </div>
+
+    <div class="footer-space"></div>
+  </div>
+</body>
 </html>
